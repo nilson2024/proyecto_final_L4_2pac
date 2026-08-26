@@ -20,6 +20,7 @@ use App\Http\Controllers\CategoriaController;
     return view('welcome');
 });
 */
+Route::get('/', [PublicacionController::class, 'index']);
 
 Route::resource('publicacions', PublicacionController::class);
 Route::resource('categorias', CategoriaController::class);
